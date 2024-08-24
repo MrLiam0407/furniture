@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--New Perspectives on HTML5 and CSS3,7th Edition Assignment Web design
+        
+        Furniture selling website
+
+        Filename : About.html
+        author : IVAN TAN YANN RONG
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/aboutus.css" rel="stylesheet"/>
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <a href="HomePage.html"><img src="image/logo.png" alt="logo"></a>
+        <div class="header_search">
+            <div class="search_input">
+                <form action="/search" method="get">
+                    <label for="search-input" class="visually-hidden"><img src="image/homepage/search.png"></label>
+                    <input type="text" id="search-input" name="q" placeholder="Search furniture here" required>
+                </form>
+            </div>
+            <div class="search_button">
+                <button type="submit" class="search-button"><a href="#">Search</a></button>
+            </div>
+        </div>
+        <nav class="nav-area">
+            <li><a href="Homepage.html"><img src="image/homepage/home.png"></a></li>
+            <li><a href="Membership.html"><img src="image/homepage/membership.png"></a></li>
+            <li><a href="Cart.html"><img src="image/homepage/cart.png"></a></li>
+            <li><a href="Payment.html"><img src="image/homepage/payment.png"></a></li>
+            <li><a href="Delivery.html"><img src="image/homepage/delivery.png"></a></li>
+            <li><a href="#"><span onclick="openNav()"><img src="image/homepage/menu.png"></span></a></li>
+        </nav>
+
+
+        <div id="Menu" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <h1>MENU</h1>
+                <a href="Abouts.html">ABOUT US</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="LiveChat.html">LIVECHAT</a>
+                <a href="Feedback.html">FEEDBACK TO US!</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="about_us">
+        <h1>About us</h1>
+        <p>We've come a long way since Malaysia founded AKEI in 2023. 
+            From being a tiny Swedish business, selling through a mail-order 
+            catalogue, AKEI has become one of the most well-known home 
+            furnishing brands in the world. Today, there are hundreds of 
+            AKEI stores around the globe, and more are coming.
+        </p>
+    </div>    
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="image/aboutus/photo_1.png" alt="photo_1" class="photo">
+            </div>
+            <div class="about-content">
+                <h2>Vision & Business idea</h2>
+                <p>We have a passion for life at home. Our culture is built 
+                   upon enthusiasm, togetherness and a “get-it-done” attitude. 
+                   We're optimists, constantly looking for new and better ways 
+                   to do things, from how to design a rocking chair that fits into 
+                   a flat-pack, to creating LED light bulbs that are affordable to 
+                   everyone. Our vision is to create a better everyday life for the 
+                   many people - for customers, but also for our co-workers and the 
+                   people who work at our suppliers.
+                </p>
+            </div>
+        </section>
+    </div>
+
+
+
+    <div class="container">
+        <section class="business">
+            <div class="business-content">
+                <h2>Business idea</h2>
+                <p>While our vision tells us why we exist, our business idea tells us 
+                   what we want to achieve. And for everyone that has visited IKEA, our 
+                   business idea is pretty obvious - “to offer a wide range of well-
+                   designed, functional home furnishing products at prices so low, that 
+                   as many people as possible will be able to afford them.”
+                </p>
+            </div>
+            <div class="business-image">
+                <img src="image/aboutus/photo_3.png" alt="photo_1" class="photo">
+            </div>
+        </section>
+    </div>
+        
+
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="image/aboutus/photo_2.png" alt="photo_1" class="photo">
+            </div>
+            <div class="about-content">
+                <p>This vision goes beyond home furnishing. We want our business to 
+                    have a positive impact on the world - from the communities where 
+                    we source our materials, to the way our products help our customers 
+                    to live a more sustainable life at home.
+                </p>
+                <p>By sharing what we do, and speaking up for what we believe in, we 
+                    can be part of a positive change in society.
+                </p>
+            </div>
+            <div class="about-last">
+                <p>That means we need to create products that have a beautiful design, 
+                    good function, are sustainable, of good quality and are available at a 
+                    low price. We call it “Democratic Design”, because we believe good home 
+                    furnishing is for everyone.
+                </p>
+                <p>With great products that appeal to many people comes large production 
+                    volumes, which means we get better deals and can offer our products 
+                    at low prices. What's more, when packing and shipping our products in 
+                    space-efficient flat-packs, storage and transportation costs are reduced, 
+                    and we can lower our prices even more.
+                </p>
+            </div>          
+        </section>
+    </div>
+
+
+    
+
+
+
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Back to top"><img src="image/homepage/top.png"></button>
+
+    <script>
+        function openNav() {
+            document.getElementById("Menu").style.height = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("Menu").style.height = "0%";
+        }
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+               mybutton.style.display = "block";
+            } 
+            else {
+               mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+    <footer>
+        &copy; TARUMT AKEI Furniture Website By 2023
+    </footer>
+       
+    </body>
+    </html>

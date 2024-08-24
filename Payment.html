@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--New Perspectives on HTML5 and CSS3,7th Edition Assignment Web design
+        
+        Furniture selling website
+
+        Filename : Payment.html
+        author : YEONG TZE SHAN
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/paymentstyle.css" rel="stylesheet"/>
+    <title>Payment</title>
+</head>
+<body>
+    <header>
+        <a href="HomePage.html"><img src="image/logo.png" alt="logo"></a>
+        <div class="header_search">
+            <div class="search_input">
+                <form action="/search" method="get">
+                    <label for="search-input" class="visually-hidden"><img src="image/homepage/search.png"></label>
+                    <input type="text" id="search-input" name="q" placeholder="Search furniture here" required>
+                </form>
+            </div>
+            <div class="search_button">
+                <button type="submit" class="search-button"><a href="#">Search</a></button>
+            </div>
+        </div>
+        <nav class="nav-area">
+            <li><a href="Homepage.html"><img src="image/homepage/home.png"></a></li>
+            <li><a href="Membership.html"><img src="image/homepage/membership.png"></a></li>
+            <li><a href="Cart.html"><img src="image/homepage/cart.png"></a></li>
+            <li><a href="Payment.html"><img src="image/homepage/payment.png"></a></li>
+            <li><a href="Delivery.html"><img src="image/homepage/delivery.png"></a></li>
+            <li><a href="#"><span onclick="openNav()"><img src="image/homepage/menu.png"></span></a></li>
+        </nav>
+
+
+        <div id="Menu" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <h1>MENU</h1>
+                <a href="Abouts.html">ABOUT US</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="LiveChat.html">LIVECHAT</a>
+                <a href="Feedback.html">FEEDBACK TO US!</a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="payment">
+    
+        <form action="PaymentBill.html" class="paymentform" >
+    
+            <div class="row">
+    
+    
+                <div class="col">
+    
+                    <h3 class="title">payment</h3>
+    
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="image/type.png">
+                    </div>
+                    <div class="inputBox">
+                        <span>Card Owner Name :</span>
+                        <input type="text" id="cardownername"placeholder="name"required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Card number :</span>
+                        <input type="text" id="cardnumber" placeholder="1111-2222-3333-4444"required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Expired Month :</span>
+                        <select name="expired"id="expired"class="expired">
+                            <option value="month"selected disable>Month</option>
+                            <option value="01">01</option>
+                            <option value="01">02</option>
+                            <option value="01">03</option>
+                            <option value="01">04</option>
+                            <option value="01">05</option>
+                            <option value="01">06</option>
+                            <option value="01">07</option>
+                            <option value="01">08</option>
+                            <option value="01">09</option>
+                            <option value="01">010</option>
+                            <option value="01">011</option>
+                            <option value="01">012</option>
+
+                        </select>
+
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Expired Year :</span>
+                            <input type="text"id="expyear" placeholder="2023"required>
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" id="cvv"placeholder="000"required>
+                        </div>
+                    </div>
+    
+                </div>
+        
+            </div>
+
+    
+            <input type="submit" value="Proceed" class="submit">
+            <input type="reset"value="Reset"class="reset">
+    
+        </form>
+
+        
+        
+    
+    </div>    
+
+
+    <script>
+        function openNav() {
+                document.getElementById("Menu").style.height = "100%";
+            }
+        
+            function closeNav() {
+                document.getElementById("Menu").style.height = "0%";
+            }
+    </script>
+    
+    <footer>
+        &copy; TARUMT AKEI Furniture Website By 2023
+    </footer>
+       
+    </body>
+    </html>

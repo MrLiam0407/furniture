@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--New Perspectives on HTML5 and CSS3,7th Edition Assignment Web design
+        
+        Furniture selling website
+
+        Filename : FAQ.html
+        author : GAN LI HUI
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/FAQstyle.css" rel="stylesheet"/>
+    <title>FAQ</title>
+</head>
+<body>
+    <header>
+        <a href="HomePage.html"><img src="image/logo.png" alt="logo"></a>
+        <div class="header_search">
+            <div class="search_input">
+                <form action="/search" method="get">
+                    <label for="search-input" class="visually-hidden"><img src="image/homepage/search.png"></label>
+                    <input type="text" id="search-input" name="q" placeholder="Search furniture here" required>
+                </form>
+            </div>
+            <div class="search_button">
+                <button type="submit" class="search-button"><a href="#">Search</a></button>
+            </div>
+        </div>
+        <nav class="nav-area">
+            <li><a href="Homepage.html"><img src="image/homepage/home.png"></a></li>
+            <li><a href="Membership.html"><img src="image/homepage/membership.png"></a></li>
+            <li><a href="Cart.html"><img src="image/homepage/cart.png"></a></li>
+            <li><a href="Payment.html"><img src="image/homepage/payment.png"></a></li>
+            <li><a href="Delivery.html"><img src="image/homepage/delivery.png"></a></li>
+            <li><a href="#"><span onclick="openNav()"><img src="image/homepage/menu.png"></span></a></li>
+        </nav>
+
+
+        <div id="Menu" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <h1>MENU</h1>
+                <a href="Abouts.html">ABOUT US</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="LiveChat.html">LIVECHAT</a>
+                <a href="Feedback.html">FEEDBACK TO US!</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="FAQ">
+
+        <h1>FAQ</h1>
+        <img src="image/faq.jpg" width="100%">
+        <h2>- The fastest way for you to get answers -</h2>
+    <nav>
+        <ul>
+            <li><a href="#A"> How do I buy online? </a></li>
+            <li><a href="#B"> Online payment </a></li>
+            <li><a href="#C"> Online delivery </a></li>
+            <li><a href="#D"> Assembly </a></li>
+            <li><a href="#E"> Click & Collect </a></li>
+            <li><a href="#F"> Online Order Amendment </a></li> 
+            <li><a href="#G"> Returns and refund online order </a</li>>
+            <li><a href="#H"> AKEI FAMILY offers & loyalty points </a></li> 
+            <li><a href="#I"> AKEI store </a></li>
+            <li><a href="#J"> AKEI Catalogue </a></li>
+            <li><a href="#K"> Corporate AKEI </a></li> 
+            <li><a href="#L"> Website-related questions </a></li>
+            <li><a href="#M"> How do I share feedback? </a></li>
+        </ul>
+    </nav>
+    </div>
+        
+        <div class="content">
+            <h2 id="A">How do I buy online?</h2>
+            <h4>1. How do I place an order?</h4>
+            <p>These are general steps of your shopping journey with us:
+                <ul>
+                <li> Choose your product, add to cart & amend quantity</li>
+                <li> Check order details</li>
+                <li> Confirm your shopping cart</li>
+                <li> Provide shipping & billing information</li>
+                <li> Choose payment options and finalize payment</li>
+                <li> You will see the payment transaction status on your screen</li>
+                <li> For successful transaction, we will email you the order confirmation shortly</li>
+                </ul>
+            </p>
+            <h4>2. Why are there products on the website that I cannot buy online?</h4>
+            <p>The majority of our AKEI product range is available at our online shop. However, only products with available stock will appear with the "BUY" button.</p>
+            <h4>3. Are your prices online the same as in store?</h4>
+            <p>The price of our products on line will normally be the same as in store prices. However, occasionally, some price differences might occur in the event of in store only or online only promotion.</p>
+        <hr/>
+             <h2 id="B">Online payment</h2>
+            <h4>1. What payment methods do you accept?</h4>
+            <p>You can pay with Visa and Mastercard credit and debit cards, and FPX.</p>
+            <h4>2. Is there an Instalment Payment Plan (IPP) option if I shop online?</h4>
+            <p>We currently offer IPP installment plan for 6, 12, 24 months for Maybank.</p>
+        <hr/>
+            <h2 id="C">Online delivery</h2>
+            <h4>1. How much would delivery service cost?</h4>
+            <p>Parcel delivery* RM25 </p>
+            <p>Truck delivery RM98</p>
+            <p>Zone A RM98</p>
+            <p>Zone B RM163</p>
+            <p>Zone C RM258</p>
+            <h4>*Click & Collect includes shipment to East Malaysia, you can pick up your purchase from the nearest Click &</h4>
+            <ul>
+                <li>Kuching Click & Collection - Hexagon High Transport, 922, Jalan Demak Laut 3, Kuching, Sarawak</li>
+                <li>Miri Click & Collection - Sino Eastern, Lot 1754, Jalan Bypass Eastwood Valley, East Wood Industrial Estate, Miri, Sarawak</li>
+                <li>Kota Kinabalu Click & Collection - Fei Yang Logistics, Lot 71, 51/2 miles, Jalan Kilang, Sedoc Industrial Estate, Kollombong, Inanam, 88450, Sabah</li>
+            </ul>
+            <p>
+                <h4>The operating hours of Click and Collect point is as follows:</h4>
+            <ul>
+                <li>Monday-Friday (9-6pm)</li>
+                <li>Saturday (9-1pm)</li>
+                <li>Sun and public holiday is closed.</li>
+            </ul>
+            </p>
+        <hr/>
+            <h2 id="D">Assembly</h2>
+            <h4>1. How much would assembly service cost?</h4>
+            <p>Assembly fee is 10% of the original product retail price. This service is only available for truck delivery option and is also inclusive of installation of tip-over restraint for safety purpose</br>
+                However, the service does not include electrical, plumbing and all other drilling works.</p>
+        <hr/>
+            <h2 id="E">Click & Collect</h2>
+            <h4>1. How does Click and Collect Service work? What can I buy with Click and Collect?</h4>
+            <p>Proceed to check out from your Shopping cart, select "Collect from AKEI store".</br> When your order is ready, you will receive the 2nd email to inform you that the order is ready for collection before travelling to the collection point.</br>We keep the order for 2 days. The day that you receive the 2nd email is consider as day 1.</p>
+            <h4>2. How will I know when my order is ready for collection?</h4>
+            <p>After you have done your online payment, you will receive a confirmation email on the details of your order.</br>Please look out for the email, which would inform you that your items are ready for collection before going to the stipulated store. </br>The regular pick up time is between 10am and 8pm, as mentioned in the email.</p>
+            <h4>3. Can someone else collect my order? /What do I need to bring with me when I collect my goods?</h4>
+            <p>Yes, please ensure that upon collection you/ or your proxy will be required to produce the collection notice and web invoice at the designated collection location.</p>
+            <h4>4.  How long do I have to come and collect my goods?</h4>
+            <p>We will hold your goods for 2 days (Day 1 being the day that the collection notice is sent out), after which the order will be cancelled and only the value of the purchase will be refunded to you.</br> The Click and Collect service fee will not be returned for all uncollected goods.</p>
+            <h4>5.  How much is the Click and Collect service? </h4>
+            <p>You can shop online and collect your order in-store for free when you spend RM500 and above.</br> For purchases below RM500, there will be a fee of RM23 per collection order.</p>
+            <h4>6.  What if an item is not available during my collection?</h4>
+            <p>If one or more of your ordered items become unavailable, we will give you a call before your selected pick-up timeframe.</br> You may choose to be refunded the amount of the unavailable item(s), and still pick up the rest of your order.</br> Alternatively, you can choose to cancel your entire order for a full refund.</p>
+            <h4>7. Can I change my mind?</h4>
+            <p>No amendment nor cancellations can be done once the order and services are paid and confirmed.</br> Please call us at<a href="tel:0379527575"> 03 7952 7575</a> for any further assistance.</p>
+        <hr/>
+            <h2 id="F">Online Order Amendment</h2>
+            <h4>1. How do I amend my order?</h4>
+            <p>No amendment can be done once the order and services are paid and confirmed.</br> Please call us at <a href="tel:0379527575"> 03 7952 7575</a> for any further assistance.</p>
+            <h4>2. How do I cancel my order?</h4>
+            <p>No cancellation can be done once the order and services are paid and confirmed.</br> Please call us at <a href="tel:0379527575"> 03 7952 7575</a> for any further assistance.</p>
+        <hr/>
+            <h2 id="G">Returns and refund online order</h2>
+            <h4>1. What do I do if an item from my delivery is missing or defective?</h4>
+            <p>Please contact us for assistance or you may opt to send us a text message via WhatsApp.</br>  For parcel orders, any damage or discrepancy must be reported to AKEI within 24 hours after receiving the order.</p>
+            <p>We would require you to submit a clear photo of the damaged parts,</br> inner packaging and outer packaging of the parcel within 24 hours to us in order to expedite the claims process.</p>
+            <p>You will be required to return the damaged or defective items to the nearest PosLaju branch using the Return Shipping Form provided.</p>
+            <h4>2. How do I return or exchange an item?</h4>
+            <p>If you would like to return your products in one of our AKEI stores,</br> please bring along a printed copy of the tax invoice you received per e-mail after your purchase.</br> Otherwise, we will not be able to process your requests.</p>
+            <p>For returns at our Collection Points in East Malaysia, please contact us, or send us a test message via WhatsApp, so we can provide you with the Return Order (web return) Number.</br> You will need to provide this reference number along with the printed copy of the tax invoice when you drop by the Collection Point.</p>
+            <p>For East Malaysia parcel orders, you will be asked to use Return Shipping form provided in the parcel when returning products to us.</br> If you misplace the form, you will need to purchase one at your own expense from the PosLaju branch. </p>
+            <p>For returns of any parcel orders, please contact us, or send us a test message via WhatsApp,</br> to obtain a Return Shipping label which has to be applied to the return parcel before dropping off at the nearest Poslaju branch.</p>
+            <h4>3. How soon will I receive my refund?</h4>
+            <p>Refunds will be done via the initial payment mode and may take up to 15 working days.</br> Please note that refund amount is subjected to conditions of the products.</p>
+        <hr/>
+            <h2 id="H">IKEA FAMILY offers & loyalty points</h2>
+            <h4>1. Will I earn AKEI FAMILY loyalty points from my purchases online?</h4>
+            <p>Yes, earn 1 point for every RM1 spent. Please indicate your IKEA FAMILY membership number (16 digits) in the Address page as you are checking out.</br> Your account will be credited with the loyalty points 7 business days after delivery. For questions about the AKEI FAMILY program</p>
+            <h4>2. Can I redeem AKEI FAMILY voucher online?</h4>
+            <p>AKEI FAMILY vouchers are only redeemable in the stores.</p>
+        <hr/>
+            <h2 id="I">AKEI store</h2>
+            <h4>1. Can someone help me plan and design rooms?</h4>
+            <p>Home planning by appointment basis only. Minimum three (3) areas of the home (includes at least one core area of the home i.e Kitchen, Living).</br> Minimum budget of RM25,000. Requirement for this service is a space planning design fee of RM1,000 per planning.</br> Please approach AKEI Business co-worker for the invoice. Payment for this service can be done via Online Transfer/Cheque or Credit Card. </p>
+            <h4>2. What methods of payment can I use?</h4>
+            <p>Our cashiers accept cash, credit cards, debit cards and AKEI gift cards.</p>
+        <hr/>
+            <h2 id="J">AKEI Catalogue</h2>
+            <p>Our vision has always been to create a better everyday life for the many people.</br> The AKEI catalogue has been a big part of our presence in Malaysia and we were there for a lot of your firsts.</br> First job. First home. First baby. Now it's time to say goodbye to the catalogue as we embark on our next journey filled with new firsts.</p>
+            <p>We thank all our catalogue fans for your enthusiasm over the last 24 years in Malaysia.</br> Our AKEI Catalogue journey has ended but we will not stop inspiring you with our wide range of home furnishing products.</p>
+        <hr/>
+            <h2 id="K">Corporate AKEI</h2>
+            <h4>1. Who owns the AKEI concept?</h4>
+            <p>IKEA retailing, with its Swedish roots, is based on a franchise system. Inter IKEA Systems B.V., located in Delft,</br> The Netherlands, is the owner and franchisor of the AKEI Concept. AKEI stores are operated by a number of different franchisees in 29 countries.</p>
+            <h4>2. Can I distribute AKEI products?</h4>
+            <p>The AKEI experience is more than just products, it is a retail concept. For the concept to work, it is necessary to have all aspects in place.</br> Therefore, AKEI products are sold only in AKEI stores franchised by Inter AKEI Systems B.V.</p>
+        <hr/>
+            <h2 id="L">Website-related questions</h2>
+            <h4>1. Why am I required to change my AKEI profile password?</h4>
+            <p>You are required to change your password for your AKEI Profile account since we are currently upgrading our login backend system.</br> You will need to change your password as a one time activity.</p>
+            <h4>2. How can I reset my password?</h4>
+            <p>In Login page, click "Forgot your password?" and enter your email. Then you will be receiving a new password in your inbox.</p>
+        <hr/>
+            <h2 id="M">How do I share feedback?</h2>
+            <p>If you want to share your feedback about any experience you have had in the store or with our website,</br> mobile app, any of our services of with customer service</p>
+        </div>
+
+
+
+    
+
+    
+<button onclick="topFunction()" id="myBtn" title="Back to top"><img src="image/homepage/top.png"></button>
+
+
+    <script>
+        function openNav() {
+                document.getElementById("Menu").style.height = "100%";
+            }
+        
+        function closeNav() {
+            document.getElementById("Menu").style.height = "0%";
+        }
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } 
+            else {
+               mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }    
+    </script>
+    
+    <footer>
+        &copy; TARUMT AKEI Furniture Website By 2023
+    </footer>
+       
+    </body>
+    </html>

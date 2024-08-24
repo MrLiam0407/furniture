@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--New Perspectives on HTML5 and CSS3,7th Edition Assignment Web design
+        
+        Furniture selling website
+
+        Filename : Cart.html
+        author : LEE WAN SZE
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/cart.css" rel="stylesheet"/>
+    <title>Shopping Cart</title>
+    
+</head>
+<body>
+    <header>
+        <a href="HomePage.html"><img src="image/logo.png" alt="logo"></a>
+        <div class="header_search">
+            <div class="search_input">
+                <form action="/search" method="get">
+                    <label for="search-input" class="visually-hidden"><img src="image/homepage/search.png"></label>
+                    <input type="text" id="search-input" name="q" placeholder="Search furniture here" required>
+                </form>
+            </div>
+            <div class="search_button">
+                <button type="submit" class="search-button"><a href="#">Search</a></button>
+            </div>
+        </div>
+        <nav class="nav-area">
+            <li><a href="Homepage.html"><img src="image/homepage/home.png"></a></li>
+            <li><a href="Membership.html"><img src="image/homepage/membership.png"></a></li>
+            <li><a href="Cart.html"><img src="image/homepage/cart.png"></a></li>
+            <li><a href="Payment.html"><img src="image/homepage/payment.png"></a></li>
+            <li><a href="Delivery.html"><img src="image/homepage/delivery.png"></a></li>
+            <li><a href="#"><span onclick="openNav()"><img src="image/homepage/menu.png"></span></a></li>
+        </nav>
+
+
+        <div id="Menu" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <h1>MENU</h1>
+                <a href="Abouts.html">ABOUT US</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="LiveChat.html">LIVECHAT</a>
+                <a href="Feedback.html">FEEDBACK TO US!</a>
+            </div>
+        </div>
+    </header>
+
+    <h1>Shopping Cart</h1>
+
+
+<form name="book" id="book"  action="Delivery.html"  method="get">  
+   <table class="table">
+            <td colspan=3><hr></td>
+        </tr>
+        <tr>
+            <td><h4 style="margin-bottom:0px">Order Form</h4></td>
+            <td><h4 style="float: right;" id="demo"></h4> </td>
+        </tr>
+        <tr>
+            <td colspan=3><hr></td>
+        </tr>
+    </table>
+
+    <table class="table2">
+        <tr>
+            <th>Furniture</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Amount (RM)</th>
+        </tr>
+    <tr>
+        <td>1.
+            <select id="desc1" class="option" name="desc1" onchange="display(this,1);">
+   	            <option>BED FRAMES</option>
+                <option value="1220.00">MALM</option>
+   	            <option value="944.00">SLÄKT</option>
+            </select>
+        </td>
+        <td><input type="text" name="Price1"  id="Price1" readonly size=8 /></td>
+            <td>
+     <select name="Quantity1"  id="Quantity1" onchange="sub(this,1);" disabled>
+   	                <script type="text/javascript">
+   		                quantity();
+   	                </script>
+                </select>
+            </td>
+        <td><input type="text" name="Amount1" id="Amount1" class="amount" size=10 class=numbers  value="0.00"  onchange="calculate();" disabled  /></td>
+        
+    </tr>
+
+    <tr>
+        <td>2.   
+            <select id="desc2" class="option" name="desc2" onchange="display(this,2);">
+   	            <option>CABINET</option>
+   	            <option value="740.00">BESTÅ</option>
+   	            <option value="5680.00">LANESUND</option>
+            </select>
+        </td>
+        <td><input type="text" name="Price2" id="Price2"   readonly  size=8 /></td>
+            <td>
+                <select name="Quantity2" id="Quantity2"   onchange="sub(this,2);"  disabled >
+   	                <script type="text/javascript">
+   		                quantity();
+   	                </script>
+                </select>
+            </td>
+        <td><input type="text" name="Amount2" id="Amount2" class="amount" size=10 class=numbers value="0.00"  onchange="calculate();" disabled /></td>
+    </tr>
+   
+    <tr>
+        <td>3.   
+            <select id="desc3" class="option" name="desc3" onchange="display(this,3);" >
+   	          <option>TABLE</option>
+   	          <option value="1999.00">SKOGSTA</option>
+   	          <option value="1699.00">NORDVIKEN</option>
+            </select>
+        </td>
+        <td><input type="text" name="Price3" id="Price3"  readonly="readonly" size=8 /></td>
+            <td>
+                <select name="Quantity3" id="Quantity3"  onchange="sub(this,3);" disabled>
+   	                <script type="text/javascript">
+   		                quantity();
+   	                </script>
+                </select>  
+            </td>
+        <td><input type="text" name="Amount3" id="Amount3" class="amount" size=10 class=numbers value="0.00"  onchange="calculate();" disabled /></td>
+    </tr>
+
+    <tr>
+        <td>4.   
+            <select id="desc4" class="option" name="desc4" onchange="display(this,4);">
+   	            <option>CHAIR</option>
+   	            <option value="999.00">ALEFJÄLL</option>
+   	            <option value="319.00">POÄNG</option>
+            </select>
+         </td>
+         <td><input type="text" name="Price4" id="Price4"  readonly  size=8 /></td>
+             <td>
+                 <select name="Quantity4" id="Quantity4"   onchange="sub(this,4);"  disabled >
+                       <script type="text/javascript">
+                          quantity();
+                       </script>
+                 </select>
+             </td>
+         <td><input type="text" name="Amount4" id="Amount4" class="amount" class="amount" size=10 class=numbers value="0.00"  onchange="calculate();" disabled /></td>
+     </tr>
+               
+    <tr>
+      <td text-align=right width=360 colspan=3 >Total Amount:</td>
+      <td width=85><input type="text" name="totalAmount" id="totalAmount" size="10"   value="0.00"  disabled  /></td>
+  </tr>
+    </table>
+<hr/>
+
+   <tr width="20" >
+      <input type="Submit" value="Submit Order" class="button" />
+      &nbsp;&nbsp;
+      <input type="button" value="Cancel Order" class="cancelorder" onclick="cancelorder()"  />
+          &nbsp;&nbsp;
+    </tr>
+
+</form>
+
+
+
+
+
+<script type="text/javascript" src="managecart.js"></script>
+<script type="text/javascript">
+    function openNav() {
+      document.getElementById("Menu").style.height = "100%";
+    }
+  
+    function closeNav() {
+        document.getElementById("Menu").style.height = "0%";
+    }
+
+    function quantity() {
+        for(num=0; num<=10 ; num++){
+        document.write("<option>" + num + "</option>");
+        }
+    }
+
+    function display(obj,num){
+    var price = "Price" + num;
+    var qty = "Quantity" + num;
+    var amount = "Amount" + num;
+        if (obj.selectedIndex != 0){
+            document.getElementById(price).value = obj.value;
+            document.getElementById(qty).value=0;
+            document.getElementById(amount).value=0.00;
+            document.getElementById(qty).disabled=false;
+            document.getElementById(qty).focus();
+            calculate(); 
+        }
+      }
+
+    function sub(obj,num){
+        var amount = "Amount" + num;
+        var price = "Price" + num;
+        var qty = obj.selectedIndex;
+            if ( qty > 0 ){
+        var subtotal = parseFloat(document.getElementById(price).value) * qty ;
+        document.getElementById(amount).value = subtotal.toFixed(2);
+        calculate();
+            }
+            else{
+        var subtotal = parseFloat(0);
+        document.getElementById(amount).value = subtotal.toFixed(2);
+        calculate();
+            }
+    }
+
+    function calculate(){
+        var amt1, amt2, amt3,amt4, total;
+        amt1 = parseFloat(document.getElementById('Amount1').value);
+        amt2 = parseFloat(document.getElementById('Amount2').value);
+        amt3 = parseFloat(document.getElementById('Amount3').value);
+        amt4 = parseFloat(document.getElementById('Amount4').value);
+        
+        total = amt1 + amt2 + amt3 +amt4   ;
+
+        document.getElementById('totalAmount').value = total.toFixed(2);
+    }
+
+    function cancelorder(){
+        if(confirm('Are you sure you want to cancel this order?') == 1 ){
+            document.book.reset();
+            window.location.reload();
+        }
+    }
+</script>
+
+<script>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d.toDateString();
+</script>
+
+    
+
+    <footer>
+        &copy; TARUMT AKEI Furniture Website By 2023
+    </footer>
+       
+    </body>
+</html>

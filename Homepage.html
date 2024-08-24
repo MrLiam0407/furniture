@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>  
+    <!--New Perspectives on HTML5 and CSS3,7th Edition Assignment Web design
+        
+        Furniture selling website
+
+        Filename : Homepage.html
+        author : LEE WAN SZE
+    -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link href="styles/homestyles.css" rel="stylesheet"/>
+   <title>AKEI Furniture Malaysia</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="HomePage.html"><img src="image/logo.png" alt="logo"></a>
+        <div class="header_search">
+            <div class="search_input">
+                <form action="/search" method="get">
+                    <label for="search-input" class="visually-hidden"><img src="image/homepage/search.png"></label>
+                    <input type="text" id="search-input" name="q" placeholder="Search furniture here" required>
+                </form>
+            </div>
+            <div class="search_button">
+                <button type="submit" class="search-button"><a href="#">Search</a></button>
+            </div>
+        </div>
+        <nav class="nav-area">
+            <li><a href="Homepage.html"><img src="image/homepage/home.png"></a></li>
+            <li><a href="Membership.html"><img src="image/homepage/membership.png"></a></li>
+            <li><a href="Cart.html"><img src="image/homepage/cart.png"></a></li>
+            <li><a href="Payment.html"><img src="image/homepage/payment.png"></a></li>
+            <li><a href="Delivery.html"><img src="image/homepage/delivery.png"></a></li>
+            <li><a href="#"><span onclick="openNav()"><img src="image/homepage/menu.png"></span></a></li>
+        </nav>
+
+
+        <div id="Menu" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <h1>MENU</h1>
+                <a href="Abouts.html">ABOUT US</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="LiveChat.html">LIVECHAT</a>
+                <a href="Feedback.html">FEEDBACK TO US!</a>
+            </div>
+        </div>
+    </header>
+
+    <!--Home Section Start-->
+    <section class="home" id="home">
+        <div class="welcome-text">
+            <h1><span>Make</span>Your Comfort <br> Is Our <span>Happiness </span></h1>
+            <p>Create Your Beautiful Home &#9825<br> - W I T H A K E I -</p>
+            <a href="#shop" class="shopbtn">Shop Now</a>
+        </div>
+    </section>
+    <!--Home Section End-->
+
+
+
+
+    <!--About Section Start-->
+    <section class="about" id="about">
+        <div class="about-text">
+            <h3>About AKEI</h3>
+            <p>
+                We've come a long way since Malaysia founded AKEI in 2023.<br> 
+                From being a tiny Swedish business, selling through a mail-order<br>
+                catalogue, AKEI has become one of the most well-known home<br>
+                furnishing brands in the world. Today, there are hundreds of<br>
+                AKEI stores around the globe, and more are coming.<br>
+            </p>
+            <a href="Abouts.html" id="about-btn">Read More...</a>
+        </div>
+    </section>
+    <!--About Section End-->
+
+
+
+
+    <!--Discount banner Start-->
+    <div class="banner">
+        <div class="banner-content">
+            <h5>Get Discount Up To 40%</h5>
+            <h3>Best Deal For Week</h3>
+            <img src="image/homepage/play2.png" class="play-btn" onclick="playVideo('media/Furnishings.mp4')">
+            <p>Get up to 40% off this week and get offer <br>Don't miss</p>
+            <button><a href="Product.html">Order Now</a></button>
+        </div>       
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="media/Furnishings.mp4" type="video/mp4">
+        </video>
+        <button class="close-btn" onclick="stopVideo()">&times;</button>
+    </div>
+    <!--Discount banner End-->
+    
+
+
+    <!--Shop Section Start-->
+    <section class="shop" id="shop">
+        <div class="shop-container">
+            <div class="heading">
+                <h3 class="section-title">AKEI Furniture</h3>
+                <div class="shop-nav">
+                    <a href="Product.html">ALL</a>
+                    <a href="Product.html #bed">BED FRAMES</a>
+                    <a href="Product.html #cabinet">CABINET</a>
+                    <a href="Product.html #table">TABLE</a>
+                    <a href="Product.html #chairs">CHAIR</a>
+                </div>
+            </div>
+            <div class="shop-grid">
+                <div class="shop-image">
+                    <a href="Product.html"><img src="image/homepage/shop.jpg" alt="shop"></a>
+                </div>
+                <div class="shop-image">
+                    <a href="Product.html #bed"><img src="image/homepage/bed.jpg" height="100%" alt="shop"></a>
+                </div>
+                <div class="shop-image">
+                    <a href="Product.html #cabinet"><img src="image/homepage/cabinet.jpg" alt="shop"></a>
+                </div>
+                <div class="shop-image">
+                    <a href="Product.html #table"><img src="image/homepage/tables.jpg" alt="shop"></a>
+                </div>
+                <div class="shop-image">
+                    <a href="Product.html #chairs"><img src="image/homepage/chairs.jpg" alt="shop"></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Shop Section End-->
+
+    
+
+    
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Back to top"><img src="image/homepage/top.png"></button>
+
+    <script>
+        function openNav() {
+            document.getElementById("Menu").style.height = "100%";
+        }
+    
+        function closeNav() {
+            document.getElementById("Menu").style.height = "0%";
+        }
+            
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+        
+        function stopVideo(){
+            videoPlayer.style.display = "none";
+        }
+
+        function playVideo(file){
+            myVideo.src = file;
+            videoPlayer.style.display = "block";
+        }
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } 
+            else {
+               mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <footer>
+        &copy; TARUMT AKEI Furniture Website By 2023
+    </footer>
+   
+</body>
+</html>

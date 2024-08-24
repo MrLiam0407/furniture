@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--New Perspectives on HTML5 and CSS3,7th Edition Assignment Web design
+        
+        Furniture selling website
+
+        Filename : table2.html
+        author : YEONG TZE SHAN
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/detail.css" rel="stylesheet"/>
+    <title>TABLE NORDVIKEN</title>
+</head>
+<body>
+    <header>
+        <a href="HomePage.html"><img src="image/logo.png" alt="logo"></a>
+        <div class="header_search">
+            <div class="search_input">
+                <form action="/search" method="get">
+                    <label for="search-input" class="visually-hidden"><img src="image/homepage/search.png"></label>
+                    <input type="text" id="search-input" name="q" placeholder="Search furniture here" required>
+                </form>
+            </div>
+            <div class="search_button">
+                <button type="submit" class="search-button"><a href="#">Search</a></button>
+            </div>
+        </div>
+        <nav class="nav-area">
+            <li><a href="Homepage.html"><img src="image/homepage/home.png"></a></li>
+            <li><a href="Membership.html"><img src="image/homepage/membership.png"></a></li>
+            <li><a href="Cart.html"><img src="image/homepage/cart.png"></a></li>
+            <li><a href="Payment.html"><img src="image/homepage/payment.png"></a></li>
+            <li><a href="Delivery.html"><img src="image/homepage/delivery.png"></a></li>
+            <li><a href="#"><span onclick="openNav()"><img src="image/homepage/menu.png"></span></a></li>
+        </nav>
+
+
+        <div id="Menu" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <h1>MENU</h1>
+                <a href="Abouts.html">ABOUT US</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="LiveChat.html">LIVECHAT</a>
+                <a href="Feedback.html">FEEDBACK TO US!</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="card-wrapper">
+        <div class="card">
+
+            <div class="product-img">
+                <div class="img-display">
+                    <div class="img-showcase">
+                        <img src="image/product photo/table2/table1.png">
+                    </div>
+                </div>
+
+                <div class="img-select">
+                    <div class="img-item">
+                        <img src="image/product photo/table2/table2.png">
+                    </div>
+                    <div class="img-item">
+                        <img src="image/product photo/table2/table3.png">
+                    </div>
+                    <div class="img-item">
+                        <img src="image/product photo/table2/table4.png">
+                    </div>
+                    <div class="img-item">
+                        <img src="image/product photo/table2/table5.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-content">
+                <h2 class="product-title">NORDVIKEN</h2>
+                <div class="product-rating">
+                    <span>&#11088;</span>
+                    <span>&#11088;</span>
+                    <span>&#11088;</span>
+                    <span>&#11088;</span>
+                    <span>&#11088;</span>
+                    <span>5.0 (83)</span>
+                </div>
+                <div class="product-price">
+                    <p><span>RM</span> 1699.00</p>
+                </div>
+                <div class="product-detail">
+                    <h2>about this item : </h2>
+                    <p>A stable construction in solid wood and hardwood veneer that makes each table unique, with varying grain patterns and natural colour shifts that are part of the charm of wood.</p>
+                    <p>The self-storing leaves are easy to insert to extend the table from 4 to 6 and just as easy to remove and tuck away under the table top when your guests have gone home.</p>
+                    <ul>
+                        <li>Color: <span>Black</span></li>
+                        <li>Available: <span>in stock</span></li>
+                        <li>Category: <span>Table</span></li>
+                        <li>Size: <span>152x95 cm</span></li>
+                    </ul>
+                </div>
+                <div class="purchase-info">
+                    <a href="Cart.html" class="btn">Buy Now</a>
+                    <a href="Product.html" class="btn">More Product</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+
+
+    <script>
+        function openNav() {
+                document.getElementById("Menu").style.height = "100%";
+            }
+        
+        function closeNav() {
+            document.getElementById("Menu").style.height = "0%";
+        }
+         
+    </script>
+    
+    <footer>
+        &copy; TARUMT AKEI Furniture Website By 2023
+    </footer>
+       
+    </body>
+    </html>

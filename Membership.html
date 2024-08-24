@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--New Perspectives on HTML5 and CSS3,7th Edition Assignment Web design
+        
+        Furniture selling website
+
+        Filename : Membership.html
+        author : IVAN TAN YANN RONG
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/membershipstyle.css" rel="stylesheet"/>
+    <title>Login Membership</title>
+</head>
+<body>
+    <header>
+        <a href="HomePage.html"><img src="image/logo.png" alt="logo"></a>
+        <div class="header_search">
+            <div class="search_input">
+                <form action="/search" method="get">
+                    <label for="search-input" class="visually-hidden"><img src="image/homepage/search.png"></label>
+                    <input type="text" id="search-input" name="q" placeholder="Search furniture here" required>
+                </form>
+            </div>
+            <div class="search_button">
+                <button type="submit" class="search-button"><a href="#">Search</a></button>
+            </div>
+        </div>
+        <nav class="nav-area">
+            <li><a href="Homepage.html"><img src="image/homepage/home.png"></a></li>
+            <li><a href="Membership.html"><img src="image/homepage/membership.png"></a></li>
+            <li><a href="Cart.html"><img src="image/homepage/cart.png"></a></li>
+            <li><a href="Payment.html"><img src="image/homepage/payment.png"></a></li>
+            <li><a href="Delivery.html"><img src="image/homepage/delivery.png"></a></li>
+            <li><a href="#"><span onclick="openNav()"><img src="image/homepage/menu.png"></span></a></li>
+        </nav>
+
+
+        <div id="Menu" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <h1>MENU</h1>
+                <a href="Abouts.html">ABOUT US</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="LiveChat.html">LIVECHAT</a>
+                <a href="Feedback.html">FEEDBACK TO US!</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="logintext">
+        <h1>Log in to your AKEI Furniture <br> account</h1>
+        <p>Get a more personalised experience where you don't need <br> to fill in your info every time</p>
+    </div>
+
+
+    <div class="hero">
+
+        <div class="form-box">
+        <br>
+        <marquee><h2><i><b>Welcome to AKEI Furniture </b></i><h2></marquee>
+        <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-but" onclick="login()">Login Membership</button>
+        </div>
+
+        <form id="login" class="input-group" action="HomePage.html" method="get">
+
+        <input  type="text" id="userIdLogin"  class="input-field" name="name" placeholder="Email (User ID)" required>
+        <input  type="password"  id="pwLogin"  class="input-field"  name="enter password" placeholder="Password" required><br><br><br><br>          
+        <input type="checkbox" class="chech-box"><span>Remember Me</span>
+        <button onclick="myFunction();" type="submit" class="submit-btn" >Login</button>
+        <a href="#">Create Account</a>
+        
+        </form>
+
+        </div>
+    </div>
+
+
+
+
+    
+
+    <script>
+        function openNav() {
+                document.getElementById("Menu").style.height = "100%";
+            }
+        
+            function closeNav() {
+                document.getElementById("Menu").style.height = "0%";
+            }
+    </script>
+    
+    <footer>
+        &copy; TARUMT AKEI Furniture Website By 2023
+    </footer>
+       
+    </body>
+    </html>

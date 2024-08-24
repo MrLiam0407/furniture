@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--New Perspectives on HTML5 and CSS3,7th Edition Assignment Web design
+        
+        Furniture selling website
+
+        Filename : Delivery.html
+        author : LEE WAN SZE
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/deliverystyle.css" rel="stylesheet" type="text/css"/>
+    <title>Product Delivery</title>
+</head>
+<body>
+    <header>
+        <a href="HomePage.html"><img src="image/logo.png" alt="logo"></a>
+        <div class="header_search">
+            <div class="search_input">
+                <form action="/search" method="get">
+                    <label for="search-input" class="visually-hidden"><img src="image/homepage/search.png"></label>
+                    <input type="text" id="search-input" name="q" placeholder="Search furniture here" required>
+                </form>
+            </div>
+            <div class="search_button">
+                <button type="submit" class="search-button"><a href="#">Search</a></button>
+            </div>
+        </div>
+        <nav class="nav-area">
+            <li><a href="Homepage.html"><img src="image/homepage/home.png"></a></li>
+            <li><a href="Membership.html"><img src="image/homepage/membership.png"></a></li>
+            <li><a href="Cart.html"><img src="image/homepage/cart.png"></a></li>
+            <li><a href="Payment.html"><img src="image/homepage/payment.png"></a></li>
+            <li><a href="Delivery.html"><img src="image/homepage/delivery.png"></a></li>
+            <li><a href="#"><span onclick="openNav()"><img src="image/homepage/menu.png"></span></a></li>
+        </nav>
+
+
+        <div id="Menu" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <h1>MENU</h1>
+                <a href="Abouts.html">ABOUT US</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="LiveChat.html">LIVECHAT</a>
+                <a href="Feedback.html">FEEDBACK TO US!</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h1>Shipping Address</h1>
+        <p style="color: rgb(146,140,140);">Please enter your shipping details</p>
+
+             <form action="Payment.html">
+                 <fieldset>
+                    <h3>&phone; Contact : </h3>
+                    <!--Customer Name-->
+                    <div class="rowinfo">
+                        <div class="titleinfo">
+                            <label for="custname"> Full Name : </label>
+                        </div>
+                        <div class="info">
+                            <input type="text" id="custname" name="custname" placeholder="Enter your full name" required/>
+                        </div>
+                    </div>
+                    <!--Customer Phone-->
+                    <div class="rowinfo">
+                        <div class="titleinfo">
+                            <label for="custphone"> Phone Number : </label>
+                        </div>
+                        <div class="info">
+                            <input id="custphone" name="custphone" value=" +60" size="1" readonly>
+                            <input type="tel" id="custphone" name="custphone" placeholder="12 345 6789" maxlength="11" required/>
+                        </div>
+                    </div>
+                    <hr/>
+                    <!--Adress-->
+                    <h3>&#9993; Address : </h3>
+                    <!--Customer Street and Unit-->
+                    <div class="rowinfo">
+                        <div class="titleinfo">
+                            <label for="address"> Street and Unit : </label>
+                        </div>
+                        <div class="info">
+                            <input type="text" id="address" name="address" placeholder="Eg. No 12, Jalan Badik 2, Taman Sri Terbau" required/>
+                        </div>
+                    </div>
+                    <!--Customer Postcode-->
+                    <div class="rowinfo">
+                        <div class="titleinfo">
+                            <label for="postalcode"> Postal code : </label>
+                        </div>
+                        <div class="info">
+                            <input type="text" id="postalcode" name="postalcode" placeholder="52000" maxlength="5" pattern="^\d{5}$" required/>
+                        </div>
+                    </div>
+                    <!--Customer City-->
+                    <div class="rowinfo">
+                        <div class="titleinfo">
+                            <label for="city"> City : </label>
+                        </div>
+                        <div class="info">
+                            <input type="text" id="city" name="city" placeholder="City" required/>
+                        </div>
+                    </div>
+                    <!--Customer State-->
+                    <div class="rowinfo">
+                        <div class="titleinfo">
+                            <label for="state"> State : </label>
+                        </div>
+                        <div class="info">
+                            <input type="text" id="state" name="state" list="dishType" placeholder="State" required/>
+                            <datalist id="dishType">
+                                <option value="Johor">Johor</option>
+                                <option value="Kedah">Kedah</option>
+                                <option value="Kelantan">Kelantan</option>
+                                <option value="Kuala Lumpur">Kuala Lumpur</option>
+                                <option value="Labuan">Labuan</option>
+                                <option value="Melaka">Melaka</option>
+                                <option value="Negeri Sembilan">Negeri Sembilan</option>
+                                <option value="Pahang">Pahang</option>
+                                <option value="Penang">Penang</option>
+                                <option value="Perak">Perak</option>
+                                <option value="Perlis">Perlis</option>
+                                <option value="Putrajaya">Putrajaya</option>
+                                <option value="Sabah">Sabah</option>
+                                <option value="Sarawak">Sarawak</option>
+                                <option value="Selangor">Selangor</option>
+                                <option value="Terengganu">Terengganu</option>
+                            </datalist>
+                        </div>
+                    </div>
+                    <!--Label as office or home-->
+                    <div class="rowinfo">
+                        <div class="titleinfo">
+                            <label>Label As : </label>
+                        </div>
+                        <div class="info">
+                            <input type="radio" id="office" name="address" value="Office" required/>
+                            <label for="office">Office</label>
+                            <input type="radio" id="home" name="address" value="Home" required/>
+                            <label for="home">Home</label>
+                        </div>
+                    </div>
+                    <!--Next / Reset Button-->
+                    <div class="rowinfo">
+                        <input type="submit" value="Next"/>
+                        &nbsp;
+                        <input type="reset" value="Reset"/>
+                    </div>
+
+                </fieldset>
+            </form>
+    </section>
+
+
+    <script>
+        function openNav() {
+                document.getElementById("Menu").style.height = "100%";
+            }
+        
+            function closeNav() {
+                document.getElementById("Menu").style.height = "0%";
+            }
+    </script>
+    
+    <footer>
+        &copy; TARUMT AKEI Furniture Website By 2023
+    </footer>
+
+</body>
+
+
+
+</html>
